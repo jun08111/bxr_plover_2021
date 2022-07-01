@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/test_int_add.dir/test_int_add.c.o  -o test_int_add  ../libjson-c.a 

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/test_double_serializer.dir/test_double_serializer.c.o  -o test_double_serializer  ../libjson-c.a 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Blue-X-ray-Plover
+Comment=민감 정보 파일 관리 프로그램
+GenericName=Blue-X-ray-Plover
+Exec=/usr/bin/plover_client
+Icon=/usr/share/icons/plover/resource/plover_symbol.png
+Type=Application
+StartupNotify=false
+Categories=Utility;
+Actions=new-empty-window;
+Keywords=Blue-X-ray-Plover;

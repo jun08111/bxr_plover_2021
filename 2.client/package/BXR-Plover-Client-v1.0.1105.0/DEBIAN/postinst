@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+
+CURUSER=$(logname)
+HOMEPATH=/home/${CURUSER}
+
+sudo chown -R ${CURUSER}:${CURUSER} /Blue-X-ray-Plover
+
+sudo mv -f Blue-X-ray-Plover/.bxrG/plover_client.desktop /usr/share/applications
+
+sudo mv -f Blue-X-ray-Plover/.bxrG/plover /usr/share/icons
+
+sudo mv -f Blue-X-ray-Plover/bin/plover_client /usr/bin
+
+sudo rm -r Blue-X-ray-Plover/bin
+
+if [-e${HOMEPATH}/.bxrG];then
+	sudo mv -n Blue-X-ray-Plover/.bxrG/plover.data ${HOMEPATH}/.bxrG/
+	sudo mv -n Blue-X-ray-Plover/.bxrG/.plover.data ${HOMEPATH}/.bxrG/	
+else
+	sudo mv -n Blue-X-ray-Plover/.bxrG ${HOMEPATH}
+fi
+
+sudo rm -rf Blue-X-ray-Plover/.bxrG
+
+sudo mv -f Blue-X-ray-Plover/lib/lib*  /usr/lib
+
+sudo rm -rf Blue-X-ray-Plover

@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o  -o testReplaceExisting  ../libjson-c.a 

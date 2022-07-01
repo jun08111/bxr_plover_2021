@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../debug.h
+stdlib.h
+-
+
+../printbuf.h
+
+/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/tests/test_printbuf.c
+assert.h
+-
+limits.h
+-
+stddef.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+debug.h
+/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/tests/debug.h
+printbuf.h
+/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/tests/printbuf.h
+

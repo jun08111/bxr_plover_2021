@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="114"
+   height="40"
+   viewBox="0 0 114 40"
+   version="1.1"
+   id="svg99"
+   sodipodi:docname="btn-apply-nor.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview101"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="14.95614"
+     inkscape:cx="57"
+     inkscape:cy="20.02522"
+     inkscape:window-width="1918"
+     inkscape:window-height="840"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g97" />
+  <defs
+     id="defs87">
+    <linearGradient
+       id="a"
+       x1="0%"
+       y1="43.844%"
+       y2="56.156%">
+      <stop
+         offset="0%"
+         stop-color="#00BAE8"
+         id="stop82" />
+      <stop
+         offset="100%"
+         stop-color="#0063F2"
+         id="stop84" />
+    </linearGradient>
+  </defs>
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="g97">
+    <rect
+       width="114"
+       height="40"
+       fill="url(#a)"
+       rx="6"
+       id="rect89" />
+    <text
+       fill="#ffffff"
+       font-family="AppleSDGothicNeo-Bold, 'Apple SD Gothic Neo'"
+       font-size="14px"
+       font-weight="bold"
+       letter-spacing="-0.25"
+       id="text93"><tspan
+         x="57.139999"
+         y="25"
+         id="tspan91">확인</tspan></text>
+    <path
+       stroke="#FFF"
+       stroke-width="3"
+       d="M32 19.373l4.356 4.427L46 14"
+       id="path95" />
+  </g>
+</svg>

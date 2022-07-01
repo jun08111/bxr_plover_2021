@@ -1,0 +1,18 @@
+#!/bin/bash
+  
+set -e
+
+CURUSER=$(logname)
+HOMEPATH=/home/${CURUSER}
+
+sudo rm -rf /usr/share/applications/plover_client.desktop
+
+sudo rm -rf /usr/share/icons/plover
+
+sudo rm -rf /usr/bin/plover_client
+
+sudo rm -rf /usr/lib/libMagicCrypto.so
+
+sudo rm -rf /usr/lib/libxdf.so
+
+sudo rm -rf ${HOMEPATH}/.bxrG/plover.conf

@@ -1,0 +1,9 @@
+Package: Blue-X-ray-Plover
+Version: 1.0.1105.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Maintainer: rnd-team@joeunins.com
+Depends: libjson-c-dev,libgtk-3-dev,libwebkit2gtk-4.0-dev, libsqlite3-dev
+Description: Blue-X-ray-Plover by Joeun I&S

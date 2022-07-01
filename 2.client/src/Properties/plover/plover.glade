@@ -1,0 +1,2542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <requires lib="webkit2gtk" version="2.12"/>
+  <object class="GtkDialog" id="calendar_dialog">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">날짜/ 시간 선택</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">400</property>
+    <property name="default-height">250</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <property name="type-hint">dialog</property>
+    <signal name="delete-event" handler="calendar_dialog_delete" swapped="no"/>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="c_ok_btn">
+                <property name="label" translatable="yes">확인</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="c_ok_btn_clicked" object="calendar_dialog" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="c_close_btn">
+                <property name="label" translatable="yes">닫기</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="c_close_btn_clicked" object="calendar_dialog" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCalendar" id="c_calendar">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="year">2021</property>
+            <signal name="day-selected" handler="c_calendar_day_selected" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="decrypt_window">
+    <property name="width-request">660</property>
+    <property name="height-request">610</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">암호파일 검사</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">610</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="dec_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="dec_main_fixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">450</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="dec_fixed1">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="dec_folder_btn">
+                    <property name="width-request">104</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="dec_folder_btn_clicked" object="dec_detect_entry" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">18</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="dec_detect_entry">
+                    <property name="width-request">267</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  [파일/폴더] 의 위치를 입력하세요...</property>
+                    <signal name="activate" handler="dec_detect_entry_activate" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">125</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dec_detect_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dec_detect_btn_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">400</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dec_setting_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dec_setting_btn_clicked" object="setting_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">524</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_detect_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-start-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">402</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_option_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-option-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">526</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">660</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">암호파일 검사</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔고딕 Bold 21"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="y">40</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="dec_fixed2">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="dec_scrolledwindow">
+                    <property name="width-request">620</property>
+                    <property name="height-request">270</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="margin-bottom">36</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkProgressBar" id="dec_progressbar">
+                    <property name="width-request">620</property>
+                    <property name="height-request">30</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="text" translatable="yes">Waiting...</property>
+                    <property name="show-text">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">280</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="dec_fixed3">
+                <property name="width-request">32</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="dec_decrypt_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dec_decrypt_btn_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">272</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dec_log_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dec_log_btn_clicked" object="detectlog_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">396</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dec_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dec_close_btn_clicked" object="decrypt_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_close_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_decrypt_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/복호화.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">274</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dec_logsearch_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/로그조회.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">398</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="detect_window">
+    <property name="width-request">660</property>
+    <property name="height-request">610</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">민감정보 검사</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">610</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="d_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="d_main_fixed">
+        <property name="width-request">660</property>
+        <property name="height-request">610</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="d_window_image">
+            <property name="width-request">660</property>
+            <property name="height-request">610</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">resource/bg-inspect.svg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">610</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="d_fixed1">
+                <property name="width-request">660</property>
+                <property name="height-request">194</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="d_folder_btn">
+                    <property name="width-request">104</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">민감정보 검사할 파일 또는 폴더를 선택합니다.</property>
+                    <property name="relief">none</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="d_folder_btn_clicked" object="d_detect_entry" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">18</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="d_detect_entry">
+                    <property name="width-request">267</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="has-frame">False</property>
+                    <property name="placeholder-text" translatable="yes">[파일/폴더]의 위치를 입력하세요.</property>
+                    <signal name="activate" handler="d_detect_entry_activate" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">125</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_detect_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">민감정보 검사를 시작합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_detect_btn_clicked" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">400</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_setting_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">민감정보 검사옵션 화면으로 이동합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_setting_btn_clicked" object="setting_window" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">524</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_detect_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-start-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">402</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_option_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-option-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">526</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="d_fixed2">
+                <property name="width-request">660</property>
+                <property name="height-request">316</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="d_scrolledwindow">
+                    <property name="width-request">620</property>
+                    <property name="height-request">270</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="margin-bottom">36</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkProgressBar" id="d_progressbar">
+                    <property name="width-request">620</property>
+                    <property name="height-request">30</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="text" translatable="yes">Waiting...</property>
+                    <property name="show-text">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">280</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="d_fixed3">
+                <property name="width-request">660</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="d_move_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">선택한 민감정보 검출된 파일을 이동시킵니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_move_btn_clicked" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">24</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_encrypt_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">선택한 민감정보 검출된 파일을 암호화시킵니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_encrypt_btn_clicked" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">148</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_delete_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">선택한 민감정보 검출된 파일을 완전삭제합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_delete_btn_clicked" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">272</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_log_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">민감정보 검사 로그조회 화면으로 이동합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_log_btn_clicked" object="detectlog_window" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">396</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="d_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">민감정보 검사 화면을 닫고, 메인 화면으로 이동합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="d_close_btn_clicked" object="detect_window" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_encrypt_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-encryption-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">150</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_delete_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-delete-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">274</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_close_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="d_move_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/파일이동.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">26</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/로그조회.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">398</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="detectlog_window">
+    <property name="width-request">660</property>
+    <property name="height-request">610</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">민감정보 검사 로그 조회</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">610</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="dl_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="dl_main_fixed">
+        <property name="width-request">660</property>
+        <property name="height-request">610</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">610</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="dl_fixed1">
+                <property name="height-request">194</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">검사항목</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="dl_combobox">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">로그 조회하실 검사항목을 선택해 주세요.</property>
+                    <property name="active">2</property>
+                    <items>
+                      <item id="&lt;ID 입력&gt;" translatable="yes">정기검사</item>
+                      <item translatable="yes">수동검사</item>
+                      <item translatable="yes">항목선택</item>
+                    </items>
+                  </object>
+                  <packing>
+                    <property name="x">85</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간</property>
+                  </object>
+                  <packing>
+                    <property name="x">220</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dl_date1_btn">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">기간을 선택해 주세요.</property>
+                    <signal name="clicked" handler="dl_date1_btn_clicked" object="calendar_dialog" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">260</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dl_date2_btn">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">기간을 선택해 주세요.</property>
+                    <signal name="clicked" handler="dl_date2_btn_clicked" object="calendar_dialog" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">390</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">~</property>
+                  </object>
+                  <packing>
+                    <property name="x">375</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="dl_date1_label">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간선택</property>
+                  </object>
+                  <packing>
+                    <property name="x">260</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="dl_date2_label">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간선택</property>
+                  </object>
+                  <packing>
+                    <property name="x">390</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dl_log_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dl_log_btn_clicked" object="dl_combobox" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">660</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">민감정보 검사 로그 조회</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔고딕 Bold 21"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dl_logsearch_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/로그조회.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="dl_fixed2">
+                <property name="height-request">314</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="dl_scrolledwindow">
+                    <property name="width-request">620</property>
+                    <property name="height-request">300</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="dl_fixed3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="dl_setting_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">환경설정 화면으로 이동합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dl_setting_btn_clicked" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">396</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="dl_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="dl_close_btn_clicked" object="detectlog_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dl_close_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dl_setting_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/환경설정.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">398</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="enrollment_window">
+    <property name="width-request">560</property>
+    <property name="height-request">660</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">신규 사용자 등록</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <child>
+      <object class="GtkFixed" id="e_main_fixed">
+        <property name="name">e_main_fixed</property>
+        <property name="width-request">420</property>
+        <property name="height-request">620</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="e_ok_btn">
+            <property name="label" translatable="yes">확 인</property>
+            <property name="width-request">118</property>
+            <property name="height-request">44</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="e_ok_btn_clicked" object="enrollment_window" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">420</property>
+            <property name="y">600</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">520</property>
+            <property name="height-request">560</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="WebKitWebView" type-func="webkit_web_view_get_type" id="e_webview">
+                <property name="width-request">520</property>
+                <property name="height-request">560</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <signal name="load-failed" handler="e_webview_load_failed" swapped="no"/>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="main_window">
+    <property name="width-request">420</property>
+    <property name="height-request">480</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Blue X-ray Plover</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">420</property>
+    <property name="default-height">480</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="destroy" handler="m_window_destroy" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="m_main_fixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="m_window_image">
+            <property name="width-request">420</property>
+            <property name="height-request">480</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">resource/bg-main.svg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">420</property>
+            <property name="height-request">480</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="m_fixed1">
+                <property name="width-request">420</property>
+                <property name="height-request">163</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel" id="m_version_label">
+                    <property name="width-request">46</property>
+                    <property name="height-request">14</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔바른고딕 10"/>
+                      <attribute name="style" value="normal"/>
+                      <attribute name="weight" value="bold"/>
+                      <attribute name="scale" value="1"/>
+                      <attribute name="foreground" value="#bababdbdb6b6"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">187</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="m_fixed2">
+                <property name="width-request">420</property>
+                <property name="height-request">240</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="m_detect_btn">
+                    <property name="width-request">200</property>
+                    <property name="height-request">200</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="opacity">0.20</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="m_detect_btn_clicked" object="m_combobox" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">110</property>
+                    <property name="y">20</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="m_detect_btn_image">
+                    <property name="width-request">240</property>
+                    <property name="height-request">240</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">검사 종류를 선택해주세요.</property>
+                    <property name="pixbuf">resource/btn-main-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">90</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="m_combobox">
+                    <property name="width-request">-1</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">검사 종류를 선택해주세요.</property>
+                    <property name="active">3</property>
+                    <items>
+                      <item id="&lt;ID 입력&gt;" translatable="yes">민감정보 검사</item>
+                      <item translatable="yes">취약점 검사</item>
+                      <item translatable="yes">암호화 파일 검사</item>
+                      <item id="&lt;ID 입력&gt;" translatable="yes">검사 종류 선택</item>
+                    </items>
+                    <signal name="changed" handler="m_combobox_changed" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">144</property>
+                    <property name="y">129</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="m_fixed3">
+                <property name="width-request">420</property>
+                <property name="height-request">77</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel" id="m_userinfo_label">
+                    <property name="width-request">200</property>
+                    <property name="height-request">30</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="track-visited-links">False</property>
+                    <property name="xalign">0.30000001192092896</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔바른고딕 11"/>
+                      <attribute name="scale" value="0.90000000000000002"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">55</property>
+                    <property name="y">27</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="m_setting_btn">
+                    <property name="width-request">100</property>
+                    <property name="height-request">34</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="focus-on-click">False</property>
+                    <property name="receives-default">True</property>
+                    <property name="opacity">0.20</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="m_setting_btn_clicked" object="setting_window" swapped="no"/>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">300</property>
+                    <property name="y">23</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="m_setting_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">34</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-settings-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">300</property>
+                    <property name="y">23</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="plan_dialog">
+    <property name="width-request">400</property>
+    <property name="height-request">125</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Blue X-ray Plover</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="type-hint">dialog</property>
+    <property name="deletable">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="plan_dialog_btn">
+                <property name="label" translatable="yes">바로실행</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="plan_dialog_btn_clicked" object="plan_dialog" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="plan_dialog_label">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="setting_window">
+    <property name="width-request">660</property>
+    <property name="height-request">530</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">환경설정</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">710</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="s_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="s_main_fixed">
+        <property name="width-request">660</property>
+        <property name="height-request">530</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">530</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="s_sub_fixed">
+                <property name="width-request">660</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="s_detect_folder_btn">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_detect_folder_btn_clicked" object="s_detect_entry" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">67</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="s_move_folder_btn">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_move_folder_btn_clicked" object="s_move_entry" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="s_encrypt_folder_btn">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_encrypt_folder_btn_clicked" object="s_encrypt_entry" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">187</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="s_decrypt_folder_btn">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_decrypt_folder_btn_clicked" object="s_decrypt_entry" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">247</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_detect_entry">
+                    <property name="width-request">315</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  [폴더] 의 위치를 입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">285</property>
+                    <property name="y">67</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_move_entry">
+                    <property name="width-request">315</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  [폴더] 의 위치를 입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">285</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_encrypt_entry">
+                    <property name="width-request">315</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  [폴더] 의 위치를 입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">285</property>
+                    <property name="y">187</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_decrypt_entry">
+                    <property name="width-request">315</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  [폴더] 의 위치를 입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">285</property>
+                    <property name="y">247</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_ip_entry">
+                    <property name="width-request">180</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes"> IP를 입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">155</property>
+                    <property name="y">310</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="s_port_entry">
+                    <property name="width-request">180</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="placeholder-text" translatable="yes">  Port를  입력하세요...</property>
+                  </object>
+                  <packing>
+                    <property name="x">420</property>
+                    <property name="y">310</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLinkButton" id="s_pagelink_btn">
+                    <property name="width-request">420</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="opacity">0.01</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">370</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="s_pagelink_label">
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">372</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="s_ok_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_ok_btn_clicked" object="setting_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">209</property>
+                    <property name="y">458</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="s_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="s_close_btn_clicked" object="setting_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">333</property>
+                    <property name="y">458</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_detect_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">67</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_move_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_encrypt_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">187</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_decrypt_folder_btn_image">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-select-folder-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">180</property>
+                    <property name="y">247</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_ok_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-apply-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">211</property>
+                    <property name="y">460</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="s_cloese_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor1.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">335</property>
+                    <property name="y">460</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 검사 기본경로</property>
+                  </object>
+                  <packing>
+                    <property name="x">60</property>
+                    <property name="y">67</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 파일 이동경로</property>
+                  </object>
+                  <packing>
+                    <property name="x">60</property>
+                    <property name="y">127</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 암호화 파일경로</property>
+                  </object>
+                  <packing>
+                    <property name="x">60</property>
+                    <property name="y">187</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 복호화 파일경로</property>
+                  </object>
+                  <packing>
+                    <property name="x">60</property>
+                    <property name="y">247</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 접속 서버 IP</property>
+                  </object>
+                  <packing>
+                    <property name="x">55</property>
+                    <property name="y">310</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">60</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· Port</property>
+                  </object>
+                  <packing>
+                    <property name="x">360</property>
+                    <property name="y">310</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">· 관리자 페이지</property>
+                  </object>
+                  <packing>
+                    <property name="x">60</property>
+                    <property name="y">373</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">660</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">환경설정</property>
+            <attributes>
+              <attribute name="font-desc" value="나눔고딕 Bold 21"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">40</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="start_window">
+    <property name="width-request">420</property>
+    <property name="height-request">480</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Blue X-ray Plover</property>
+    <property name="default-width">420</property>
+    <property name="default-height">480</property>
+    <property name="icon">resource/bg-start.png</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="start_img">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">resource/bg-start.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="st_version_label">
+            <property name="width-request">420</property>
+            <property name="height-request">14</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="나눔바른고딕 10"/>
+              <attribute name="style" value="normal"/>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1"/>
+              <attribute name="foreground" value="#bababdbdb6b6"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">127</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="st_label">
+            <property name="width-request">420</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">설정 파일을 불러오고 있습니다.</property>
+            <property name="justify">center</property>
+            <property name="ellipsize">end</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="0.90000000000000002"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width-request">420</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">(주) 조은아이앤에스</property>
+            <attributes>
+              <attribute name="weight" value="ultraheavy"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinner" id="st_spinner">
+            <property name="width-request">420</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="active">True</property>
+          </object>
+          <packing>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkDrawingArea" id="st_drawing_area">
+            <property name="width-request">80</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="vdetect_window">
+    <property name="width-request">660</property>
+    <property name="height-request">610</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">취약점 검사</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">610</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="v_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="v_main_fixed">
+        <property name="width-request">660</property>
+        <property name="height-request">450</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">450</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="v_fixed1">
+                <property name="height-request">194</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">60</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">보안 상태:</property>
+                  </object>
+                  <packing>
+                    <property name="x">25</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_status_label">
+                    <property name="width-request">60</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">  안전  </property>
+                    <attributes>
+                      <attribute name="weight" value="ultraheavy"/>
+                      <attribute name="scale" value="1.3"/>
+                      <attribute name="underline" value="True"/>
+                      <attribute name="foreground" value="#ffffffffffff"/>
+                      <attribute name="background" value="#2e2ec2c27e7e"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">85</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="name">전체</property>
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">전체:</property>
+                  </object>
+                  <packing>
+                    <property name="x">150</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_item_label">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">N</property>
+                  </object>
+                  <packing>
+                    <property name="x">175</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">안전:</property>
+                  </object>
+                  <packing>
+                    <property name="x">205</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_safe_label">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">N</property>
+                  </object>
+                  <packing>
+                    <property name="x">230</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">취약:</property>
+                  </object>
+                  <packing>
+                    <property name="x">260</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_vurnelability_label">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">N</property>
+                  </object>
+                  <packing>
+                    <property name="x">285</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">미수행:</property>
+                  </object>
+                  <packing>
+                    <property name="x">315</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_impossible_label">
+                    <property name="width-request">30</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">N</property>
+                  </object>
+                  <packing>
+                    <property name="x">353</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="v_detect_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="v_detect_btn_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">400</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="v_setting_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="v_setting_btn_clicked" object="setting_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">524</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="v_detect_btn_image">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-start-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">400</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="v_setting_btn_image">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-option-inspect-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">524</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">660</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">취약점 검사</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔고딕 Bold 21"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="y">40</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="v_fixed2">
+                <property name="width-request">32</property>
+                <property name="height-request">316</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="v_scrolledwindow">
+                    <property name="width-request">620</property>
+                    <property name="height-request">270</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="margin-bottom">36</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkProgressBar" id="v_progressbar">
+                    <property name="width-request">620</property>
+                    <property name="height-request">30</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="text" translatable="yes">Waiting...</property>
+                    <property name="show-text">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">280</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="v_fixed3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">75</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">정기검사 최종 점검일:</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">9</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="v_date_label">
+                    <property name="width-request">140</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">점검 내역이 없습니다.</property>
+                  </object>
+                  <packing>
+                    <property name="x">150</property>
+                    <property name="y">9</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="v_log_btn">
+                    <property name="label" translatable="yes">로그조회</property>
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="v_log_btn_clicked" object="vdetectlog_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">396</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="v_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="v_close_btn_clicked" object="vdetect_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="v_close_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="v_log_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/로그조회.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">398</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="vdetectlog_window">
+    <property name="width-request">660</property>
+    <property name="height-request">610</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">취약점 검사 로그 조회</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center-always</property>
+    <property name="default-width">660</property>
+    <property name="default-height">610</property>
+    <property name="icon">resource/plover_symbol.png</property>
+    <signal name="delete-event" handler="vl_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="vl_main_fixed">
+        <property name="width-request">32</property>
+        <property name="height-request">32</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">660</property>
+            <property name="height-request">610</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="vl_fixed1">
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">검사항목</property>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxText" id="vl_combobox">
+                    <property name="width-request">100</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">로그 조회하실 검사항목을 선택해 주세요.</property>
+                    <property name="active">2</property>
+                    <items>
+                      <item id="&lt;ID 입력&gt;" translatable="yes">정기검사</item>
+                      <item translatable="yes">수동검사</item>
+                      <item translatable="yes">항목선택</item>
+                    </items>
+                  </object>
+                  <packing>
+                    <property name="x">85</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간</property>
+                  </object>
+                  <packing>
+                    <property name="x">220</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="vl_date1_btn">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">기간을 선택해 주세요.</property>
+                    <signal name="clicked" handler="vl_date1_btn_clicked" object="calendar_dialog" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">260</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="vl_date2_btn">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">기간을 선택해 주세요.</property>
+                    <signal name="clicked" handler="vl_date2_btn_clicked" object="calendar_dialog" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">390</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">~</property>
+                  </object>
+                  <packing>
+                    <property name="x">375</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="vl_date1_label">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간선택</property>
+                  </object>
+                  <packing>
+                    <property name="x">260</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="vl_date2_label">
+                    <property name="width-request">110</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">기간선택</property>
+                  </object>
+                  <packing>
+                    <property name="x">390</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="vl_log_btn">
+                    <property name="label" translatable="yes">로그조회</property>
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="vl_log_btn_clicked" object="vl_combobox" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">152</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="width-request">660</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">취약점 검사 로그 조회</property>
+                    <attributes>
+                      <attribute name="font-desc" value="나눔고딕 Bold 21"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="y">40</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="vl_log_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/로그조회.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">154</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="vl_fixed2">
+                <property name="height-request">316</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="vl_scrolledwindow">
+                    <property name="width-request">620</property>
+                    <property name="height-request">300</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="x">20</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="vl_fixed3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="vl_close_btn">
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="vl_close_btn_clicked" object="vdetectlog_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">520</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="vl_close_btn_image">
+                    <property name="width-request">114</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/btn-close-nor.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">522</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="vl_setting_btn">
+                    <property name="label" translatable="yes">환경설정</property>
+                    <property name="width-request">118</property>
+                    <property name="height-request">44</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">환경설정 화면으로 이동합니다.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="vl_setting_btn_clicked" object="setting_window" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">396</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="vl_setting_btn_image">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">resource/환경설정.svg</property>
+                  </object>
+                  <packing>
+                    <property name="x">398</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

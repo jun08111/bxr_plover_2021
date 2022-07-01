@@ -1,0 +1,1213 @@
+The system is: Linux - 3.10.0-1160.25.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/3.17.5/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8dd57/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8dd57.dir/build.make CMakeFiles/cmTC_8dd57.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8dd57.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8dd57.dir/testCCompiler.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_8dd57
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_8dd57.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8dd57.dir/testCCompiler.c.o  -o cmTC_8dd57 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_78b56/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78b56.dir/build.make CMakeFiles/cmTC_78b56.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccOF52GX.s
+GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)
+	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)
+	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 231b3394950636dbfe0428e88716bc73
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o /tmp/ccOF52GX.s
+GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_78b56
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_78b56.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o  -o cmTC_78b56 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_78b56' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_78b56 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_78b56/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78b56.dir/build.make CMakeFiles/cmTC_78b56.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/cc1 -quiet -v /usr/share/cmake3/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccOF52GX.s]
+  ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (GCC) version 4.8.5 20150623 (Red Hat 4.8.5-44) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 4.8.5 20150623 (Red Hat 4.8.5-44)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 231b3394950636dbfe0428e88716bc73]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o /tmp/ccOF52GX.s]
+  ignore line: [GNU assembler version 2.27 (x86_64-redhat-linux) using BFD version version 2.27-44.base.el7]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_78b56]
+  ignore line: [/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_78b56.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o  -o cmTC_78b56 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c c++ objc obj-c++ java fortran ada go lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_78b56' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_78b56 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_78b56] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
+    arg [CMakeFiles/cmTC_78b56.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.5]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d8ecc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8ecc.dir/build.make CMakeFiles/cmTC_d8ecc.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8ecc.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d8ecc.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d8ecc
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_d8ecc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d8ecc.dir/CheckIncludeFile.c.o  -o cmTC_d8ecc 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_80f22/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80f22.dir/build.make CMakeFiles/cmTC_80f22.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80f22.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_80f22.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_80f22
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_80f22.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_80f22.dir/CheckSymbolExists.c.o  -o cmTC_80f22 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e2f0a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e2f0a.dir/build.make CMakeFiles/cmTC_e2f0a.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e2f0a.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_e2f0a.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e2f0a
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_e2f0a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e2f0a.dir/CheckIncludeFile.c.o  -o cmTC_e2f0a  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_2eb6c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2eb6c.dir/build.make CMakeFiles/cmTC_2eb6c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2eb6c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_2eb6c.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2eb6c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_2eb6c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2eb6c.dir/CheckIncludeFile.c.o  -o cmTC_2eb6c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dfdee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dfdee.dir/build.make CMakeFiles/cmTC_dfdee.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dfdee.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_dfdee.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dfdee
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_dfdee.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dfdee.dir/CheckIncludeFile.c.o  -o cmTC_dfdee  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ba5c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ba5c6.dir/build.make CMakeFiles/cmTC_ba5c6.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba5c6.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_ba5c6.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ba5c6
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_ba5c6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ba5c6.dir/CheckIncludeFile.c.o  -o cmTC_ba5c6  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0458f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0458f.dir/build.make CMakeFiles/cmTC_0458f.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0458f.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_0458f.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0458f
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_0458f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0458f.dir/CheckIncludeFile.c.o  -o cmTC_0458f  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5b5d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5b5d3.dir/build.make CMakeFiles/cmTC_5b5d3.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b5d3.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_5b5d3.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5b5d3
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5b5d3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5b5d3.dir/CheckIncludeFile.c.o  -o cmTC_5b5d3  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5af61/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5af61.dir/build.make CMakeFiles/cmTC_5af61.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5af61.dir/STDC_HEADERS.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_5af61.dir/STDC_HEADERS.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
+Linking C executable cmTC_5af61
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_5af61.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5af61.dir/STDC_HEADERS.c.o  -o cmTC_5af61  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_6aef4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6aef4.dir/build.make CMakeFiles/cmTC_6aef4.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6aef4.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_6aef4.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6aef4
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_6aef4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6aef4.dir/CheckIncludeFile.c.o  -o cmTC_6aef4  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_668a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_668a0.dir/build.make CMakeFiles/cmTC_668a0.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_668a0.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_668a0.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_668a0
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_668a0.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_668a0.dir/CheckIncludeFile.c.o  -o cmTC_668a0  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_19777/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_19777.dir/build.make CMakeFiles/cmTC_19777.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19777.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_19777.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_19777
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_19777.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_19777.dir/CheckIncludeFile.c.o  -o cmTC_19777  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file endian.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1ed71/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ed71.dir/build.make CMakeFiles/cmTC_1ed71.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ed71.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_1ed71.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1ed71
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_1ed71.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1ed71.dir/CheckIncludeFile.c.o  -o cmTC_1ed71  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0f60c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f60c.dir/build.make CMakeFiles/cmTC_0f60c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f60c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_0f60c.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0f60c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_0f60c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0f60c.dir/CheckIncludeFile.c.o  -o cmTC_0f60c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_c708c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c708c.dir/build.make CMakeFiles/cmTC_c708c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c708c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_c708c.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c708c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_c708c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c708c.dir/CheckIncludeFile.c.o  -o cmTC_c708c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8997a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8997a.dir/build.make CMakeFiles/cmTC_8997a.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8997a.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_8997a.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8997a
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_8997a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8997a.dir/CheckIncludeFile.c.o  -o cmTC_8997a  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_53e5a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53e5a.dir/build.make CMakeFiles/cmTC_53e5a.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53e5a.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_53e5a.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_53e5a
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_53e5a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_53e5a.dir/CheckIncludeFile.c.o  -o cmTC_53e5a  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_230a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_230a8.dir/build.make CMakeFiles/cmTC_230a8.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_230a8.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_230a8.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_230a8
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_230a8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_230a8.dir/CheckIncludeFile.c.o  -o cmTC_230a8  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/cdefs.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ac8c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ac8c3.dir/build.make CMakeFiles/cmTC_ac8c3.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac8c3.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_ac8c3.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ac8c3
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_ac8c3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ac8c3.dir/CheckIncludeFile.c.o  -o cmTC_ac8c3  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9f09c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f09c.dir/build.make CMakeFiles/cmTC_9f09c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f09c.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_9f09c.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9f09c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_9f09c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9f09c.dir/CheckIncludeFile.c.o  -o cmTC_9f09c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_6d516/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d516.dir/build.make CMakeFiles/cmTC_6d516.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d516.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_6d516.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6d516
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_6d516.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6d516.dir/CheckIncludeFile.c.o  -o cmTC_6d516  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file xlocale.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f0a6a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0a6a.dir/build.make CMakeFiles/cmTC_f0a6a.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0a6a.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_f0a6a.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f0a6a
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_f0a6a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f0a6a.dir/CheckIncludeFile.c.o  -o cmTC_f0a6a  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the INFINITY exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_46208/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46208.dir/build.make CMakeFiles/cmTC_46208.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46208.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_46208.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_46208
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_46208.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_46208.dir/CheckSymbolExists.c.o  -o cmTC_46208  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef INFINITY
+  return ((int*)(&INFINITY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isinf exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_70080/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_70080.dir/build.make CMakeFiles/cmTC_70080.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70080.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_70080.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_70080
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_70080.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_70080.dir/CheckSymbolExists.c.o  -o cmTC_70080  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isnan exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_f0341/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0341.dir/build.make CMakeFiles/cmTC_f0341.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0341.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_f0341.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f0341
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_f0341.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f0341.dir/CheckSymbolExists.c.o  -o cmTC_f0341  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nan exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d6247/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d6247.dir/build.make CMakeFiles/cmTC_d6247.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6247.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d6247.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d6247
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_d6247.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d6247.dir/CheckSymbolExists.c.o  -o cmTC_d6247  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nan
+  return ((int*)(&nan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_8f4ee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f4ee.dir/build.make CMakeFiles/cmTC_8f4ee.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f4ee.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_8f4ee.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8f4ee
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_8f4ee.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8f4ee.dir/CheckSymbolExists.c.o  -o cmTC_8f4ee  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vasprintf exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_fe061/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fe061.dir/build.make CMakeFiles/cmTC_fe061.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe061.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_fe061.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fe061
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_fe061.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fe061.dir/CheckSymbolExists.c.o  -o cmTC_fe061  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vasprintf
+  return ((int*)(&vasprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_3dbe5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3dbe5.dir/build.make CMakeFiles/cmTC_3dbe5.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3dbe5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_3dbe5.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3dbe5
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_3dbe5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3dbe5.dir/CheckSymbolExists.c.o  -o cmTC_3dbe5  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vprintf exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9043f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9043f.dir/build.make CMakeFiles/cmTC_9043f.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9043f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_9043f.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9043f
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_9043f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9043f.dir/CheckSymbolExists.c.o  -o cmTC_9043f  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vprintf
+  return ((int*)(&vprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the open exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_ae424/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ae424.dir/build.make CMakeFiles/cmTC_ae424.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae424.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_ae424.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ae424
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_ae424.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ae424.dir/CheckSymbolExists.c.o  -o cmTC_ae424  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_665aa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_665aa.dir/build.make CMakeFiles/cmTC_665aa.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_665aa.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_665aa.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_665aa
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_665aa.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_665aa.dir/CheckSymbolExists.c.o  -o cmTC_665aa  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_214e5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_214e5.dir/build.make CMakeFiles/cmTC_214e5.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_214e5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_214e5.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_214e5
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_214e5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_214e5.dir/CheckSymbolExists.c.o  -o cmTC_214e5  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the uselocale exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_cc4cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc4cb.dir/build.make CMakeFiles/cmTC_cc4cb.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc4cb.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_cc4cb.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cc4cb
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_cc4cb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cc4cb.dir/CheckSymbolExists.c.o  -o cmTC_cc4cb  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef uselocale
+  return ((int*)(&uselocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_588e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_588e6.dir/build.make CMakeFiles/cmTC_588e6.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_588e6.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_588e6.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_588e6
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_588e6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_588e6.dir/CheckSymbolExists.c.o  -o cmTC_588e6  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_d1390/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d1390.dir/build.make CMakeFiles/cmTC_d1390.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1390.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d1390.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d1390
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_d1390.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d1390.dir/CheckSymbolExists.c.o  -o cmTC_d1390  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strdup exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_59938/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_59938.dir/build.make CMakeFiles/cmTC_59938.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59938.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_59938.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_59938
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_59938.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_59938.dir/CheckSymbolExists.c.o  -o cmTC_59938  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_73fb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73fb3.dir/build.make CMakeFiles/cmTC_73fb3.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73fb3.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_73fb3.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_73fb3
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_73fb3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_73fb3.dir/CheckSymbolExists.c.o  -o cmTC_73fb3  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsyslog exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9280c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9280c.dir/build.make CMakeFiles/cmTC_9280c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9280c.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_9280c.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9280c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_9280c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9280c.dir/CheckSymbolExists.c.o  -o cmTC_9280c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <syslog.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsyslog
+  return ((int*)(&vsyslog))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7b7e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b7e6.dir/build.make CMakeFiles/cmTC_7b7e6.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b7e6.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_7b7e6.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7b7e6
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7b7e6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7b7e6.dir/CheckSymbolExists.c.o  -o cmTC_7b7e6  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_dc81d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dc81d.dir/build.make CMakeFiles/cmTC_dc81d.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc81d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_dc81d.dir/CheckSymbolExists.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dc81d
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_dc81d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dc81d.dir/CheckSymbolExists.c.o  -o cmTC_dc81d  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_61dd6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_61dd6.dir/build.make CMakeFiles/cmTC_61dd6.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61dd6.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_61dd6.dir/CheckIncludeFile.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_61dd6
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_61dd6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_61dd6.dir/CheckIncludeFile.c.o  -o cmTC_61dd6  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_20304/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_20304.dir/build.make CMakeFiles/cmTC_20304.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20304.dir/SIZEOF_INT.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_20304.dir/SIZEOF_INT.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_20304
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_20304.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_20304.dir/SIZEOF_INT.c.o  -o cmTC_20304  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_41f70/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41f70.dir/build.make CMakeFiles/cmTC_41f70.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41f70.dir/SIZEOF_INT64_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_41f70.dir/SIZEOF_INT64_T.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
+Linking C executable cmTC_41f70
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_41f70.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_41f70.dir/SIZEOF_INT64_T.c.o  -o cmTC_41f70  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_fb301/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb301.dir/build.make CMakeFiles/cmTC_fb301.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb301.dir/SIZEOF_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_fb301.dir/SIZEOF_LONG.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_fb301
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_fb301.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fb301.dir/SIZEOF_LONG.c.o  -o cmTC_fb301  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1f986/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1f986.dir/build.make CMakeFiles/cmTC_1f986.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f986.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_1f986.dir/SIZEOF_LONG_LONG.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_1f986
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_1f986.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1f986.dir/SIZEOF_LONG_LONG.c.o  -o cmTC_1f986  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_87ded/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87ded.dir/build.make CMakeFiles/cmTC_87ded.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87ded.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_87ded.dir/SIZEOF_SIZE_T.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_87ded
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_87ded.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_87ded.dir/SIZEOF_SIZE_T.c.o  -o cmTC_87ded  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_510bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_510bd.dir/build.make CMakeFiles/cmTC_510bd.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_510bd.dir/SIZEOF_SSIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_510bd.dir/SIZEOF_SSIZE_T.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_510bd
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_510bd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_510bd.dir/SIZEOF_SSIZE_T.c.o  -o cmTC_510bd  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_9b041/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9b041.dir/build.make CMakeFiles/cmTC_9b041.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b041.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -DHAVE_ATOMIC_BUILTINS -fPIE   -o CMakeFiles/cmTC_9b041.dir/src.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9b041
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_9b041.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_ATOMIC_BUILTINS    -rdynamic CMakeFiles/cmTC_9b041.dir/src.c.o  -o cmTC_9b041  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_7ab00/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7ab00.dir/build.make CMakeFiles/cmTC_7ab00.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ab00.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -DHAVE___THREAD -fPIE   -o CMakeFiles/cmTC_7ab00.dir/src.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7ab00
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_7ab00.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___THREAD    -rdynamic CMakeFiles/cmTC_7ab00.dir/src.c.o  -o cmTC_7ab00  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__thread int x = 0; int main() { return 0; }
+Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_e966c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e966c.dir/build.make CMakeFiles/cmTC_e966c.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e966c.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DREENTRANT_WORKS -fPIE   -o CMakeFiles/cmTC_e966c.dir/src.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e966c
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_e966c.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DREENTRANT_WORKS    -rdynamic CMakeFiles/cmTC_e966c.dir/src.c.o  -o cmTC_e966c  -lm 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	/* uClibc toolchains without threading barf when _REENTRANT is defined */
+	#define _REENTRANT 1
+	#include <sys/types.h>
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test BSYMBOLIC_WORKS succeeded with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b051e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b051e.dir/build.make CMakeFiles/cmTC_b051e.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b051e.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DBSYMBOLIC_WORKS -fPIE   -o CMakeFiles/cmTC_b051e.dir/src.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b051e
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_b051e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DBSYMBOLIC_WORKS    -rdynamic CMakeFiles/cmTC_b051e.dir/src.c.o  -o cmTC_b051e  -lm -Wl,-Bsymbolic-functions 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test VERSION_SCRIPT_WORKS succeeded with the following output:
+Change Dir: /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_fbc39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fbc39.dir/build.make CMakeFiles/cmTC_fbc39.dir/build
+gmake[1]: Entering directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fbc39.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DVERSION_SCRIPT_WORKS -fPIE   -o CMakeFiles/cmTC_fbc39.dir/src.c.o   -c /home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fbc39
+/usr/bin/cmake3 -E cmake_link_script CMakeFiles/cmTC_fbc39.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DVERSION_SCRIPT_WORKS    -rdynamic CMakeFiles/cmTC_fbc39.dir/src.c.o  -o cmTC_fbc39  -lm -Wl,--version-script,/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/check-version-script.sym 
+gmake[1]: Leaving directory `/home/bluexg/Blue-X-ray-Eraser/1.server/src/thirdparty/json-c-0.15/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
